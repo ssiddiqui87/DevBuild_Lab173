@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    margin: 30px auto 200px;
+    border-radius: 30px;
+    padding: 80px;
+    max-width: 650px;
+    flex-direction: column;
+    align-items: center;
+    border-color: rgb(85, 0, 0);
+    border-style: solid;
+    border-width: 6px;
+    
+    background: linear-gradient(to right, #ff9966, #ff5e62); 
+    opacity: 0.9;
+}

@@ -1,0 +1,20 @@
+<!-- <div>
+    <h3>Yo, Here are some famous people</h3>
+    <br />
+    <p *ngFor="let f of famousPeople?.complete" class="donut">
+        <a [routerLink]="['/donuts', d.id]"></a>
+        {{f.firstName}}
+    </p>
+</div> -->
+
+<sprk-accordion >
+    <sprk-accordion-item title="{{f.firstName}} {{f.lastName}}" additionalClasses="sprk-u-mbs"
+        additionalHeadingClasses="sprk-b-TypeDisplaySeven" idString="accordion-item-1"
+        analyticsString="object.action.event" *ngFor="let f of famousPeople?.complete">
+        <p>
+            Innovation: {{f.innovation}} 
+            Year: {{f.year}}
+        </p>
+    </sprk-accordion-item>
+
+</sprk-accordion>

@@ -1,0 +1,8 @@
+
+<div>
+    <h3>Yo, Here are some Donuts</h3>
+    <br />
+    <p *ngFor="let d of donuts?.results" class = "donut">
+        <a [routerLink]="['/donuts', d.id]">{{d.name}}</a>
+    </p>
+</div>
