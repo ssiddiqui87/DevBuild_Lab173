@@ -12,8 +12,9 @@ const routes: Routes = [
   { path: 'donuts', component: DonutsComponent },
   { path: 'donuts/:id', component: DonutDetailComponent },
   { path: 'famous-people', component: FamousPeopleComponent },
-  { path: 'famous-people:id', component: FamousPersonDetailComponent }
-  
+  { path: 'famous-people:id', component: FamousPersonDetailComponent },
+  { path: '', redirectTo: '/donuts', pathMatch: 'full' }
+
 ];
 
 @NgModule({

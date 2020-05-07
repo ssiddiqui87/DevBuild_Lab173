@@ -8,13 +8,16 @@
 </div> -->
 
 <sprk-accordion >
-    <sprk-accordion-item title="{{f.firstName}} {{f.lastName}}" additionalClasses="sprk-u-mbs"
-        additionalHeadingClasses="sprk-b-TypeDisplaySeven" idString="accordion-item-1"
-        analyticsString="object.action.event" *ngFor="let f of famousPeople?.complete">
-        <p>
-            Innovation: {{f.innovation}} 
-            Year: {{f.year}}
-        </p>
+    <sprk-accordion-item title="{{f.firstName}} {{f.lastName}}" additionalClasses="accHeading"
+        additionalHeadingClasses="accHeading" idString="accordion-item-1"
+        analyticsString="object.action.event" *ngFor="let f of famousPeople?.complete" class="accHeading">
+        <h3>
+            <strong style="color:#d60000">Innovation:</strong> {{f.innovation}} 
+           
+        </h3>
+        <h3>
+        <strong style="color:#d60000">Year:</strong> {{f.year}}
+        </h3>
     </sprk-accordion-item>
 
 </sprk-accordion>
