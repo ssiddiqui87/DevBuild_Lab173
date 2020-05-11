@@ -1,7 +1,15 @@
+Hello
+<form class="container pt-2" [formGroup]="formGroup">
+
+				<input class="form-control" formControlName="name" placeholder="Enter name" >
+
+</form>
+
+
 <sprk-accordion >
     <sprk-accordion-item title="{{f.firstName}} {{f.lastName}}" additionalClasses="accHeading"
         additionalHeadingClasses="accHeading" idString="accordion-item-1"
-        analyticsString="object.action.event" *ngFor="let f of famousPeople?.complete" class="accHeading">
+        analyticsString="object.action.event" *ngFor="let f of people?.complete" class="accHeading">
         <h3>
             <strong style="color:#d60000">Innovation:</strong> {{f.innovation}} 
            
